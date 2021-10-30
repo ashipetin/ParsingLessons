@@ -27,6 +27,10 @@ while True:
                     salary_min = int(salary.split()[1])
                     salary_max = "Не указано"
                     salary_zcurrency = ''.join(salary.split()[2:])
+                elif "до" in salary:
+                    salary_min = "Не указано"
+                    salary_max = int(salary.split()[1])
+                    salary_zcurrency = ''.join(salary.split()[2:])
                 else:
                     salary_min = int(salary.split()[0])
                     salary_max = int(salary.split()[2])
