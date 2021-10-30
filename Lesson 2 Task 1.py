@@ -38,7 +38,7 @@ while True:
             except:
                 salary_min = 'Не указано'
                 salary_max = 'Не указано'
-                salary_currency = 'Не указано'
+                salary_zcurrency = 'Не указано'
             vac_data['name'] = name
             vac_data['salary_min'] = salary_min
             vac_data['salary_max'] = salary_max
