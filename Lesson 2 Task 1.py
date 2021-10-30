@@ -1,4 +1,5 @@
 import requests
+import pandas as pd
 from bs4 import BeautifulSoup as bs
 from pprint import pprint
 url = 'https://hh.ru'
@@ -46,4 +47,6 @@ while True:
     else:
         break
 pprint(vaclist)
-
+pd = pd.DataFrame(vaclist)
+print(pd)
+pd.to_csv(r'C:\Users\Admin\PycharmProjects\ParsingLessons\Vacancies.csv')
