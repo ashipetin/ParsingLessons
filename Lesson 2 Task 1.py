@@ -24,12 +24,12 @@ while True:
                 salary = salary_block.find('span').text
                 salary = salary.replace("\u202f","")
                 if salary.startswith("от",0,3):
-                    salary_min = salary.split()[1]
+                    salary_min = int(salary.split()[1])
                     salary_max = "Не указано"
                     salary_zcurrency = ''.join(salary.split()[2:])
                 else:
-                    salary_min = salary.split()[0]
-                    salary_max = salary.split()[2]
+                    salary_min = int(salary.split()[0])
+                    salary_max = int(salary.split()[2])
                     salary_zcurrency = ''.join(salary.split()[3:])
             except:
                 salary_min = 'Не указано'
