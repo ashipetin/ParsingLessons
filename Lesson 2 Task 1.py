@@ -1,4 +1,3 @@
-# https://hh.ru/search/vacancy?    fromSearchLine=true  &  text=ыыы
 import requests
 from bs4 import BeautifulSoup as bs
 from pprint import pprint
